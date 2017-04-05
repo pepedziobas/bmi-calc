@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="choice">Choose units</string>
+    <string name="enterW">Enter weight</string>
+    <string name="enterH">Enter height</string>
+    <string name="hintWKg"> in kilograms</string>
+    <string name="hintHM"> in meters</string>
+    <string name="hintWLBS"> in pounds</string>
+    <string name="hintHINCH"> in inches</string>
+    <string name="btnLeftPart">KG/M</string>
+    <string name="btnRightPart">LBL/INCH</string>
+    <string name="buttonText">CALCULATE BMI</string>
+    <string name="errorH">Height must be from 0.5 to 2.5 m</string>
+    <string name="errorW">Weight must be from 10 to 250 kg</string>
+    <string name="errorH2">Height must be from 20 to 100 inch</string>
+    <string name="errorW2">Weight must be from 20 to 550 lbl</string>
+    <string name="BMI">BMI legend</string>
+
+    <string name="underweight">"Underweight"</string>
+    <string name="normal">"Normal"</string>
+    <string name="overweight">"Overweight"</string>
+    <string name="obesity">"Obesity"</string>
+
+    <string name="changeToKgM">Units changed to kg/m</string>
+    <string name="changeToLbInch">Units changed to lb/inch</string>
+
+
+    <string name="action_clean">Clean</string>
+    <string name="action_clean_info">Cleaned</string>
+    <string name="action_settings">Settings</string>
+    <string name="menuAboutAuthor">About author</string>
+    <string name="menuSave">Save</string>
+    <string name="menuSaveInfo">Saved</string>
+    <string name="menuShare">Share</string>
+    <string name="menuShareInfo1">"Hey my BMI is equal to "</string>
+    <string name="menuShareInfo2">". Cheers!"</string>
+    <string name="menuShareFailInfo">To share you must calculate your BMI</string>
+
+    <string name="description1"> Dziobak australijski – prowadzący
+        częściowo wodny tryb życia endemiczny dla wschodnich stanów Australii (w tym Tasmanii) gatunek ssaka z
+        grupy stekowców, jedynych członków tej gromady składających jaja.</string>
+
+    <string name="description2"> Jest ostatnim istniejącym do dziś
+        przedstawicielem swego rodzaju i rodziny. Ma wiele nietypowych
+        jak na ssaka cech: składa jaja, wydziela jad i ma dziób. </string>
+
+    <string name="authorName">Tomasz Pepera</string>
+
+
+
+
+</resources>

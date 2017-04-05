@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pepe.labories1.MainActivity"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textViewChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choice"
+        android:textSize="14sp"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/switchBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorBtnOff"
+        android:text="@string/btnRightPart"
+        />
+
+    <Button
+        android:id="@+id/switchBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/switchBtn2"
+        android:background="@color/colorAccent"
+        android:text="@string/btnLeftPart" />
+
+
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enterW"
+        android:textSize="14sp"
+        android:layout_below="@id/textViewChoice"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:digits="0123456789."
+        android:hint="@string/hintWKg"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@id/switchBtn1"
+        android:layout_below="@id/switchBtn1"
+        android:imeOptions="actionDone"/>
+
+    <TextView
+        android:id="@+id/textViewHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enterH"
+        android:textSize="14sp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/textViewWeight"/>
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:hint="@string/hintHM"
+        android:digits="0123456789."
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editTextWeight"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/editTextWeight"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:id="@+id/calculateBMIButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonText"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_gravity="center"
+        android:layout_below="@id/textViewHeight"/>
+    <!--<TextView-->
+        <!--android:id="@+id/BMIText"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/calculateBMIButton"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:text="@string/BMI"-->
+        <!--android:layout_marginRight="10dp"/>-->
+
+    <LinearLayout
+        android:id="@+id/legendLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/calculateBMIButton"
+        android:layout_marginTop="30dp"
+        android:weightSum="35">
+
+        <TextView
+            android:id="@+id/legendUnderweight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/underweight"
+            android:background="@color/colorBtnOff"
+            android:textSize="@dimen/legend_font_size"
+            android:layout_weight="10"
+            android:gravity="center"/>
+
+            <!--android:layout_below="@id/calculateBMIButton"-->
+            <!--android:layout_alignParentLeft="true"-->
+
+        <TextView
+            android:id="@+id/legendNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/normal"
+            android:background="@color/colorBtnOff"
+            android:textSize="@dimen/legend_font_size"
+            android:layout_weight="8"
+            android:gravity="center"/>
+
+            <!--android:layout_below="@id/calculateBMIButton"-->
+            <!--android:layout_toRightOf="@id/legendUnderweight"-->
+
+        <TextView
+            android:id="@+id/legendOverweight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/overweight"
+            android:background="@color/colorBtnOff"
+            android:textSize="@dimen/legend_font_size"
+            android:layout_weight="10"
+            android:gravity="center"/>
+
+            <!--android:layout_below="@id/calculateBMIButton"-->
+            <!--android:layout_toRightOf="@id/legendNormal"-->
+        <TextView
+            android:id="@+id/legendObesity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/obesity"
+            android:background="@color/colorBtnOff"
+            android:textSize="@dimen/legend_font_size"
+            android:layout_weight="7"
+            android:gravity="center"/>
+
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_below="@id/calculateBMIButton"-->
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@id/legendLinear"
+        android:maxLength="5"
+        android:textSize="50sp"/>
+
+
+    //ma być wybór jednostek + UI test + relative layout + butterknife
+
+</RelativeLayout>
+
+
+
+
+
+

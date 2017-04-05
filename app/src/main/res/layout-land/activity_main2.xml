@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pepe.labories1.AboutAuthorActivity"
+    android:background="@color/colorBtnOff">
+
+
+    <TextView
+        android:id="@+id/authorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/authorName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"/>
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/authorImageView"
+        android:layout_below="@id/authorTextView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/pepe"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp">
+
+    </com.pkmmte.view.CircularImageView>
+
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/authorDescription1"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description1"
+        android:textSize="14sp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/authorTextView" />
+
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/authorDescription2"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/authorDescription1"
+        android:text="@string/description2"
+        android:textSize="14sp"
+        android:layout_toRightOf="@id/authorImageView"
+        android:layout_alignStart="@id/authorDescription1"/>
+
+</RelativeLayout>
+    </LinearLayout>
+</ScrollView>
